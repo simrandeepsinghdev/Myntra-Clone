@@ -71,6 +71,38 @@
     color: #696e79;
 }
 
+@media screen and (max-width:1000px) {
+    .search_field{
+        display: none;
+    }
+    .search_bar{
+        min-width:6%
+    }
+}
+
+@media screen and (max-width:800px) {
+    .nav_bar{
+        display: none;
+    }
+    .action_bar{
+        flex-grow: 0.4;
+    }
+
+
+}
+@media screen and (min-width: 800px) {
+    .menu_container{
+        display: none;
+    }
+    .offer_container{
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25px;
+    }
+}
+
 .action_bar{
     padding-left: 2%;
     display: flex;
@@ -96,13 +128,7 @@
  width: 100%;
 }
 
-.offer_container{
-    padding: 0 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 25px;
-}
+
 
 .offers{
     display: flex;
