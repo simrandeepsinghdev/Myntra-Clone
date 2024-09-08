@@ -87,7 +87,13 @@
     .action_bar{
         flex-grow: 0.4;
     }
-
+    .menu_container {
+        cursor: pointer;
+    }
+    .menu_icon{
+        text-decoration: none;
+        color: #696e79;
+    }
 
 }
 @media screen and (min-width: 800px) {
