@@ -21,38 +21,58 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 @media screen and (max-width:700px) {
   .bag-page {
     width: 90%;
     margin-left: 5%;
+    justify-content: center;
   }
+
   .bag-items-container {
 
     width: 80%;
+    border: none;
+    text-align: center;
+    padding: 32px 0 0 0;
+  }
+
+  .bag-summary { 
+    vertical-align: top;
+    color: #282c3f;
+    font-size: 13px;
+    line-height: 1.42857143;
+    width: 80%;
+    display: inline-block;
+    padding: 10px 0 0 0;
 
   }
-  .bag-summary {
-   
-    width: 90%;
-    display: flex;
-    padding: 0 40px;
-  }
+  
   .bag-details-container {
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     min-width: 230px;
+  } 
+  .company{
+   text-align: left;
   }
 }
-.bag-summary {
-  vertical-align: top;
-  display: inline-block;
-  width: 35%;
-  padding: 24px 0 0 16px;
-  color: #282c3f;
-  font-size: 13px;
-  line-height: 1.42857143;
+
+@media screen and (min-width:700px) {
+  .bag-summary {
+    vertical-align: top;
+    display: inline-block;
+    width: 35%;
+    padding: 24px 0 0 16px;
+    color: #282c3f;
+    font-size: 13px;
+    line-height: 1.42857143;
+  }
+
+  
 }
+
 
 .bag-details-container {
   margin-bottom: 16px;
@@ -133,7 +153,7 @@
 
 .return-period {
   display: inline-flex;
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 8px;
 }
 
@@ -170,14 +190,26 @@
 
 .company{
   font-weight: 700;
-    font-size: 13px;
+  font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 16px;
+    margin-bottom: 4px;
+    color: #282c3f;
 }
 
 .item-name{
+  width: 80%;
   overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     line-height: 16px;
+    color: #282c3f;
+}
+
+.price-container{
+  margin-top: 25%;  
 }
 
 .current-price{

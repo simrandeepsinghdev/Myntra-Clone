@@ -39,7 +39,7 @@ function displayBagSummary(){
             <span class="price-item-value">₹${finalPrice}</span>
           </div>
         </div>
-        <button class="btn-place-order">
+        <button class="btn-place-order" onclick="alert('Order placed successfully')">
           <div class="css-xjhrni">PLACE ORDER</div>
         </button>
     `
